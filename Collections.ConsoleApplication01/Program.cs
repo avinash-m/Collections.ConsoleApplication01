@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Collections.ConsoleApplication01
 {
     class Program
     {
         static void Main(string[] args)
-        {            
-            Console.WriteLine("Adding items to ArrayList by calling Add method");
+        {       
+            // ArrayList
+            Console.WriteLine("Adding items to ArrayList");
             MyArrayList.AddElements();
             Console.WriteLine("Number of items added: " + MyArrayList.CountElements());
             Console.WriteLine("Items in the list:");
@@ -21,6 +18,20 @@ namespace Collections.ConsoleApplication01
             Console.WriteLine("Removing 2nd element");
             MyArrayList.RemoveElement(1);
             MyArrayList.ShowItems();
+            Console.WriteLine("------------------------");
+
+            // Dictionary
+            Console.WriteLine("Adding items to Dictionary");
+            MyDictionary.AddElements();
+            Console.WriteLine("Number of items added: " + MyDictionary.CountElements());
+            Console.WriteLine("Items in the list:");
+            MyDictionary.ShowItems();
+            Console.WriteLine("Updating 'quarter' value");
+            MyDictionary.UpdateElement("quarter");
+            MyDictionary.ShowItems();
+            Console.WriteLine("Removing 'cent'");
+            MyDictionary.RemoveElement("cent");
+            MyDictionary.ShowItems();
             Console.WriteLine("------------------------");
 
         }

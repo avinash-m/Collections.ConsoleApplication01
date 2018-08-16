@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Collections.ConsoleApplication01
 {
-    class MyArrayList
+    static class MyArrayList
     {
         private static ArrayList stringArrayList = new ArrayList();
 
@@ -31,6 +31,14 @@ namespace Collections.ConsoleApplication01
         public static int CountElements()
         {
             return stringArrayList.Count;
+        }
+
+        public static void ShowItems()
+        {
+            foreach (string s in stringArrayList)
+            {
+                Console.WriteLine(s);
+            }
         }
 
     }

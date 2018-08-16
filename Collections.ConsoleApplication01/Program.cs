@@ -10,6 +10,7 @@ namespace Collections.ConsoleApplication01
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

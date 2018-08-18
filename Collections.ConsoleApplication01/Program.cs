@@ -18,6 +18,8 @@ namespace Collections.ConsoleApplication01
             Console.WriteLine("Removing 2nd element");
             MyArrayList.RemoveElement(1);
             MyArrayList.ShowItems();
+            Console.WriteLine("Show only integers in the arraylist(unboxing)");
+            MyArrayList.ShowIntItems();
             Console.WriteLine("------------------------");
 
             // Dictionary

@@ -14,6 +14,9 @@ namespace Collections.ConsoleApplication01
             // Boxing 
             object obj = 45;
             stringArrayList.Add(obj);
+            obj = 30;
+            stringArrayList.Add(obj);
+            
         }
 
         public static void RemoveElement(int position)
@@ -35,9 +38,18 @@ namespace Collections.ConsoleApplication01
 
         public static void ShowItems()
         {
+            foreach(object o in stringArrayList)
+                Console.WriteLine(o);
+        }
+
+        public static void ShowIntItems()
+        {
             foreach (object o in stringArrayList)
             {
-                Console.WriteLine(o);
+                if (o.GetType() == typeof(int)) // printing only int values
+                {
+                    Console.WriteLine((int)o); // Unboxing
+                }
             }
         }
 

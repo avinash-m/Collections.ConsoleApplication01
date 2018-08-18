@@ -10,6 +10,10 @@ namespace Collections.ConsoleApplication01
         public static void AddElements()
         {
             stringArrayList.AddRange(new string[] {"Alabama","Georgia","Iowa" });
+
+            // Boxing 
+            object obj = 45;
+            stringArrayList.Add(obj);
         }
 
         public static void RemoveElement(int position)
@@ -31,9 +35,9 @@ namespace Collections.ConsoleApplication01
 
         public static void ShowItems()
         {
-            foreach (string s in stringArrayList)
+            foreach (object o in stringArrayList)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(o);
             }
         }
 
